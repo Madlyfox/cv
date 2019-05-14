@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<meta charset="utf-8">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="angularjs_route.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body  >
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand " href="#"><img src="assets/img/airbnb.png" alt="ArrowHead"></a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon " style="color: grey"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0 offset-md-9">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: grey">Aide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="false" data-toggle="modal" data-target="#InscriptionModal" style="color: grey">Inscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="false" data-toggle="modal" data-target="#ConnexionModal" style="color: grey">Connexion</a>
+                        </li>
+                        <li>
+                            <a href="Explorer.html"><button type="button" class="btn btn-outline-danger">Explorer</button></a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!-- Inscription modal -->
+    <div class="modal fade center" id="InscriptionModal" tabindex="-1" role="dialog" aria-labelledby="InscriptionModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="container col-md-12">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Inscription via Facebook</button>
+                    <button type="button" class="btn btn-outline-dark btn-lg btn-block">Inscription via Google</button>
+                    <hr>
+                    <button type="button" class="btn btn-danger btn-lg btn-block">Insciption par Mail</button>
+                    <div>
+                        <small>Vous avez déja un compte airbnb ? <a href="#">Connexion</a></small>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Connextion modal -->
+    <div class="modal fade center" id="ConnexionModal" tabindex="-1" role="dialog" aria-labelledby="ConnexionModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title col-md-11">Connexion</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="container col-md-12">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Connexion avec Facebook</button>
+                    <button type="button" class="btn btn-outline-dark btn-lg btn-block">Connexion avec Google</button>
+                    <hr>
+                    <div class="container col-md-12 ">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Adresse Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+                            </div>
+                            <div class="container row">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                                </div>
+                                <div class=" offset-md-2">
+                                    <small><a href="#">Afficher le mot de passe</a></small>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="center">
+                            <button type="button" class="btn btn-danger btn-lg btn-block">Connexion</button>
+                            <small class="bold"><a href="#">Mot de passe oublié ?</a></small>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="ng-view"></div>
+        <footer class="bgc2  footer fixed-bottom indigo">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contactez-vous</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="txc7" href="#!">Service clientèle</a>
+                            </li>
+                            <li>
+                                <a class="txc7" href="#!">Blog</a>
+                            </li>
+                            <li>
+                                <a class="txc7" href="#!">Carrière</a>
+                            </li>
+                            <li>
+                                <a class="txc7" href="#!">A propos de Milléniumconcordia.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Conditions</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="txc7" href="#!">Politique de confidentialité</a>
+                            </li>
+                            <li>
+                                <a class="txc7" href="#!">Politique fiscale</a>
+                            </li>
+                            <li>
+                                <a class="txc7" href="#!">Conditions d'utilisation</a>
+                            </li>
+                            <li>
+                                <a class="txc7" href="#!">Politique d'échange</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Le groupe Quish</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="txc7" href="#!">Qui sommes nous ?</a>
+                            </li>
+                            <li>
+                                <a class="txc7" href="#!">Recrutement</a>
+                            </li>
+                            <li>
+                                <a class="txc7" href="#!">Développement durable</a>
+                            </li>
+                            <li>
+                                <a class="txc7" href="#!">Groupe Milléniumconsordia.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Nos partenaires</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="txc7" href="#!">toujourspas.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="footer-copyright text-center py-3">© 2019-2019:
+        <a href="#"> Milléniumconcordia.com</a>
+    </div>
+    <!-- Copyright -->
+
+    </footer>
+
+    </div>
+    </div>
+     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

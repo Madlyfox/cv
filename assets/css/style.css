@@ -1,0 +1,76 @@
+
+.card-body {
+  height: 325px;
+}
+
+.carousel-control-prev-icon {
+  border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+  border-radius: 50%;
+}
+
+.New-York {
+  background-image: url(../img/New-York.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Paris {
+  background-image: url(../img/paris.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tokyo {
+  background-image: url(../img/tokyo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.londres {
+  background-image: url(../img/londre.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.los-angeles {
+  background-image: url(../img/los-angeles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.barcelone {
+  background-image: url(../img/barcelone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.rome {
+  background-image: url(../img/rome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.amsterdam {
+  background-image: url(../img/amsterdam2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-body h4, .card-body p {
+  text-shadow: 1px 1px 2px black;
+}
+
+.card-body h4 {
+  font-weight: bold;
+}
